@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color: #b84747;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      form {
+        background-image: url(assets/images/House\ Insulated.jpg);
+        background-size: cover;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      select {
+        width: 90%;
+      }
+
+      button {
+        display: block;
+        width: 50%;
+        background-color: #09ff09d2;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <h1>Customer Information Form</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <h3>Customer Name</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select name="title" id="title" required>
+                <option value="">Select Your Title</option>
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="dr">Dr.</option>
+                <option value="sir">Sir.</option>
+                <option value="miss">Miss.</option>
+              </select>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="fn"
+                name="fn"
+                placeholder="First"
+                required
+              />
+            </td>
+            <td>
+              <input type="text" id="mn" name="mn" placeholder="Middle" />
+            </td>
+            <td>
+              <input
+                type="text"
+                id="ln"
+                name="ln"
+                placeholder="Last"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Customer Address</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="stAdd"
+                name="stAdd"
+                placeholder="Street Address"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="stAdd2"
+                name="stAdd2"
+                placeholder="Street Address Line 2"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+              />
+            </td>
+            <td>
+              <input type="text" id="rgn" name="rgn" placeholder="Region" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="pnCode"
+                name="pnCode"
+                placeholder="Postal/Zip Code"
+                required
+              />
+            </td>
+            <td>
+              <select name="country" id="country" required>
+                <option value="">Select Your Country</option>
+                <option value="trk">Turkey</option>
+                <option value="pak">Pakistan</option>
+                <option value="fls">Palestine</option>
+                <option value="irq">Iraq</option>
+                <option value="sra">Syria</option>
+                <option value="ymn">Yemen</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3><label for="mobNum">Customer Phone</label></h3>
+            </td>
+            <td>
+              <h3><label for="fax">Customer Fax</label></h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="mobNum"
+                name="mobNum"
+                placeholder="### ### ####"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                id="fax"
+                name="fax"
+                placeholder="### ### ####"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3><label for="dob">Customer Date Of Birth</label></h3>
+            </td>
+            <td>
+              <h3><label for="mail">Customer ID/E-mail</label></h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="date" id="dob" name="dob" />
+            </td>
+            <td>
+              <input type="email" id="mail" name="mail" />
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              <p>
+                <b>
+                  All Customer Information will be kept with discretion and will
+                  not be used for marketing or advertisement purposes without
+                  customer approval.
+                </b>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <p>
+                <input type="checkbox" id="chkBox" required />
+                <label for="chkBox">
+                  <b>
+                    I allow my information to be used for future campaigns
+                  </b>
+                </label>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="4">
+              <button id="submit" type="submit">Submit Information</button>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>

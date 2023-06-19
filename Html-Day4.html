@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Tag</title>
+    <style>
+        body{background-color: navy;}
+        table {
+            background-color: chartreuse;
+            font-size: larger;
+            text-decoration-color: red;
+        }
+        button {
+            background-color:darkorchid;
+            font-size:medium;
+        }
+        thead{
+            column-span:all;
+            text-align: right;
+        }
+        tbody{column-span: all;
+            text-align: center;
+        }
+      </style>
+</head>
+  <body>
+    <form action="" method="get">
+      <table>
+        <thead>
+            <tr>
+                <td><h2>
+                    <label for="fn">REGISTRATION  FORM</label>
+                </h2></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="fn">Enter Full Name</label>
+            </td>
+            <td></td>
+            <td><input type="text" name="fullName" id="fn" /><br /><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="add">Enter Permanent Address</label>
+            </td>
+            <td></td>
+            <td><input type="text" name="address" id="add" /><br /><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mail">Enter E-Mail Address</label>
+            </td>
+            <td></td>
+            <td><input type="email" name="email" id="mail" /><br /><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="num">Enter Mobile Number</label>
+            </td>
+            <td></td>
+            <td><input type="text" name="mobNumber" id="num" /><br /><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pass">Enter Password</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="password" name="passWord" id="pass" /> <br /><br />
+            </td>
+          </tr>
+        </tbody>
+        <tr>
+          <td>
+            <button onclick="SubmitEvent">Sign-Up</button>
+          </td>
+          <td></td>
+          <td>
+            <button onclick="SubmitEvent">Sign-In Instead</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

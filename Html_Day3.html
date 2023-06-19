@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 3px solid  rgb(106, 97, 97);
+        width: 50%;
+      }
+      thead{
+        background-color: brown;
+      }
+      tbody{
+        background-color: red;
+      }
+      tfoot {
+        background-color: purple;
+        
+      }
+    </style>
+    <title>Tables</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Afnan</td>
+        <td rowspan="5" style="text-align: center"><b>DEVs</b></td>
+        <td>50k</td>
+      </tr>
+      <tr>
+        <td>Ateeb</td>
+        <td>51k</td>
+      </tr>
+      <tr>
+        <td>Safan</td>
+        <td>52k</td>
+      </tr>
+      <tr>
+        <td>Sania</td>
+        <td>53k</td>
+      </tr>
+      <tr>
+        <td>Ahlaam</td>
+        <td>54k</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="2" style="text-align: center">Total Salary</th>
+        <td>260k</td>
+      </tr>
+    </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Some More Input Tags</title>
+    <style>
+      body {
+        background-color: navy;
+      }
+
+      table {
+        background-color: chartreuse;
+        font-size: larger;
+        text-decoration-color: red;
+      }
+
+      button {
+        background-color: darkorchid;
+        font-size: larger;
+      }
+
+      thead {
+        column-span: all;
+        text-align: right;
+      }
+
+      tbody {
+        column-span: all;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <table>
+        <thead>
+          <tr>
+            <td>
+              <h2>
+                <label for="fn">REGISTRATION FORM</label>
+              </h2>
+            </td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="fn">Your Full Name</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="text" name="fullName" id="fn" required /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="add">Your Permanent Address</label>
+            </td>
+            <td></td>
+            <td>
+              <textarea name="address" id="add" required></textarea><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gen">Clarify Your Gender</label>
+            </td>
+            <td>
+              <label for="male"> Male </label>
+              <input type="radio" name="gender" id="male" required />
+            </td>
+            <td>
+              <label for="female"> FeMale </label>
+              <input type="radio" name="gender" id="female" required />
+            </td>
+            <td>
+              <label for="LGQHDTv"> Controversial </label>
+              <input type="radio" name="gender" id="LGQHDTv" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mail">Your E-Mail Address</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="email" name="email" id="mail" required /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="num">Your Mobile Number</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="number" name="mobNumber" id="num" /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pass">Enter Password</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="password" name="passWord" id="pass" required />
+              <br /><br />
+            </td>
+          </tr>
+        </tbody>
+        <tr>
+          <td>
+            <button>Sign-Up</button>
+          </td>
+          <td></td>
+          <td>
+            <button>Sign-In Instead</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="font-size: x-large">
+            <label>Would you recommend this site to your friends?</label>
+          </td>
+          <td></td>
+          <td>
+            <label for="rec">Definitely</label>
+            <input type="checkbox" name="chbox" id="rec" />
+          </td>
+          <td>
+            <label for="recm">Not Sure Will Try</label>
+            <input type="checkbox" name="chbox" id="recm" />
+          </td>
+          <td>
+            <label for="recmd">NO</label>
+            <input type="checkbox" name="chbox" id="recmd" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
